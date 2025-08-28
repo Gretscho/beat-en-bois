@@ -88,7 +88,6 @@ a:hover {
   padding-top: 100px;
 }
 
-
 .hero-content h1 { 
   font-size: 3rem; 
   font-weight: 700; 
@@ -132,21 +131,21 @@ a:hover {
   box-shadow: 0 20px 40px rgba(0,0,0,0.3); 
 }
 
-/* Image flottante - VERSION AMÉLIORÉE */
+/* Image flottante - VERSION AMÃ‰LIORÃ‰E */
 .hero-float {
   position: relative;
   display: inline-block;
   margin-top: 30px;
-  width: 300px; /* Augmenté de 200px à 300px */
+  width: 300px; /* AugmentÃ© de 200px Ã  300px */
   z-index: 2;
 }
 
 .hero-float img {
   width: 100%;
   height: auto;
-  border-radius: 15px; /* Arrondi légèrement augmenté */
+  border-radius: 15px; /* Arrondi lÃ©gÃ¨rement augmentÃ© */
   animation: float-slow 6s ease-in-out infinite; /* 6s au lieu de 3s */
-  box-shadow: 0 15px 40px rgba(0,0,0,0.3); /* Ombre plus marquée */
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3); /* Ombre plus marquÃ©e */
   transition: transform 0.3s;
 }
 
@@ -157,7 +156,7 @@ a:hover {
 /* Animation ralentie */
 @keyframes float-slow {
   0% { transform: translateY(0); }
-  50% { transform: translateY(-8px); } /* Mouvement réduit de -12px à -8px */
+  50% { transform: translateY(-8px); } /* Mouvement rÃ©duit de -12px Ã  -8px */
   100% { transform: translateY(0); }
 }
 
@@ -174,17 +173,7 @@ a:hover {
     width: 200px;
   }
 }
-
-/* Correction pour iPhone en paysage spécifiquement */
-@media (max-width: 812px) and (max-height: 375px) and (orientation: landscape) {
-  #hero {
-    min-height: calc(100vh + 180px) !important;
-    padding-top: 200px !important;
-    margin-top: -180px !important;
-  }
-}
-
-/* ========== SECTIONS GÉNÉRALES ========== */
+/* ========== SECTIONS GÃ‰NÃ‰RALES ========== */
 section {
   padding: 80px 0;
 }
@@ -245,11 +234,11 @@ section {
   flex-grow: 1; 
   margin-bottom: 20px;
   color: var(--text-dark);
-  font-size: 1.1rem;   /* 🔹 Taille augmentée */
-  line-height: 1.7;    /* 🔹 Plus aéré */
+  font-size: 1.1rem;   /* ðŸ”¹ Taille augmentÃ©e */
+  line-height: 1.7;    /* ðŸ”¹ Plus aÃ©rÃ© */
 }
 
-/* 🔹 Encore plus lisible sur écrans larges */
+/* ðŸ”¹ Encore plus lisible sur Ã©crans larges */
 @media (min-width: 992px) {
   .produit-description {
     font-size: 1.2rem;
@@ -421,3 +410,52 @@ section {
   transform: translateY(-3px);
 }
 
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 20px;
+  }
+  
+  #header .navbar ul {
+    gap: 15px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.1rem;
+  }
+  
+  .produits-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .hero-float {
+    width: 120px;
+    bottom: -15px;
+    right: -15px;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title h2 {
+    font-size: 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .produit-card {
+    padding: 20px;
+  }
+}
