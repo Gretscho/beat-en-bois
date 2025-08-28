@@ -175,7 +175,14 @@ a:hover {
   }
 }
 
-
+/* Correction pour iPhone en paysage spécifiquement */
+@media (max-width: 812px) and (max-height: 375px) and (orientation: landscape) {
+  #hero {
+    min-height: calc(100vh + 180px) !important;
+    padding-top: 200px !important;
+    margin-top: -180px !important;
+  }
+}
 
 /* ========== SECTIONS GÉNÉRALES ========== */
 section {
