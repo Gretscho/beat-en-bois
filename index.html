@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier Bois Campbonnais - Taille et soins aux arbres 
+Abattages délicats 
+Bois de chauffage</title>
+
+  <!-- Styles dynamiques -->
+  <style id="dynamic-styles">
+    :root {
+      --primary: #2E7D32;
+      --secondary: #8D6E63;
+      --card-bg: #F9F9F9;
+      --border-color: #DAD7D0;
+      --menu-title-color: #2E2E2E;
+      --menu-subtitle-color: #4E5D4E;
+      --text-dark: #333333;
+      --text-light: #ffffff;
+      --hero-text-color: #ffffff;
+
+      /* Images → toujours depuis /img/ */
+      
+      --hero-bg-image: url('../img/hero.jpg');
+      
+
+      
+      --hero-float-image: url('../img/floating.png');
+      
+    }
+  </style>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/style_boutique.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header" class="fixed-top">
+    <div class="container header-container">
+      <h1 class="logo"><a href="#hero">Atelier Bois Campbonnais</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
+          
+          <li><a class="nav-link scrollto" href="#produits">Services</a></li>
+          
+          
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <div class="col-lg-6 hero-content">
+          <h1>Taille et soins aux arbres 
+Abattages délicats 
+Bois de chauffage</h1>
+          <h2>Arboriste qualifié aux services de vos arbres.
+Elagage raisonné, Haubanage, transformation en bois de chauffage ou en bois d&#39;œuvre...</h2>
+          
+            <a href="#produits" class="btn-get-started scrollto">Découvrir</a>
+          
+        </div>
+
+        <!-- CORRECTION : Image flottante seulement (hero.jpg est déjà en background) -->
+        
+        <div class="col-lg-6 hero-img-container">
+          <div class="hero-float">
+            <img src="img/floating.png" 
+                alt="Illustration flottante">
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </section>
+  <!-- Produits -->
+  
+  <section id="produits" class="section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2>Mes Services</h2>
+        <p>Découvrez mes prestations</p>
+      </div>
+      <div class="produits-grid">
+        
+        
+        <div class="produit-card">
+          <div class="produit-body">
+            <h3>Elagage</h3>
+            
+              <p class="produit-description">Elagage raisonné, respect du végétal dans son environnement</p>
+            
+          </div>
+          <div class="produit-footer">
+            <a href="#contact" class="btn-commander">Me contacter</a>
+          </div>
+        </div>
+        
+        
+        
+        <div class="produit-card">
+          <div class="produit-body">
+            <h3>Bois de chauffage</h3>
+            
+            <p class="produit-description">Pour faire monter la chaleur...</p>
+
+          </div>
+          <div class="produit-footer">
+            <a href="#contact" class="btn-commander">Me contacter</a>
+          </div>
+        </div>
+        
+        
+        
+        <div class="produit-card">
+          <div class="produit-body">
+            <h3>Abattage arbre</h3>
+
+            <p class="produit-description">A la hache, à l'ancienne ! </p>
+            
+          </div>
+          <div class="produit-footer">
+            <a href="#contact" class="btn-commander">Me contacter</a>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Atelier -->
+  
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Restons en contact</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Atelier Bois Campbonnais</h3>
+          <p><i class="bi bi-geo-alt"></i> 39 la fouas</p>
+          <p><i class="bi bi-telephone"></i> 06.59.77.28.72</p>
+          <p><i class="bi bi-envelope"></i> mathismarley7@gmail.com</p>
+
+          
+
+          
+        </div>
+
+        <div class="contact-map">
+          
+          <iframe src="https://maps.google.com/maps?q=39%20la%20fouas&output=embed" loading="lazy"></iframe>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <p>© Atelier Bois Campbonnais - Site généré avec TakeASite</p>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="bi bi-arrow-up"></i></a>
+</body>
+</html>
